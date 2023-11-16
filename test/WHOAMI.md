@@ -1,0 +1,3 @@
+- Nom : 
+- Prénom : 
+- Utilisation de chatGPT / copilot : Oui / Non

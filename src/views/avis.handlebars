@@ -1,0 +1,42 @@
+{{! ✅ Fichier à modifier pour l'évaluation : Exercice 4 }}
+
+<h1 class="mb-8 max-w-xl text-3xl font-light leading-snug tracking-tight text-g1 sm:text-5xl sm:leading-snug"
+  data-test-id="titre-avis"> {{randonnee.title}} : les avis </h1>
+<div class="flex flex-col items-start lg:flex-row">
+  <img src="{{randonnee.pictureUrl}}" alt="{{randonnee.title}}"
+    class="rounded-lg mb-4 lg:mb-0 lg:mr-8 w-full flex-basis-1/2 max-w-lg" />
+  <div class="flex-basis-1/2">
+    {{#each avis}}
+    <div class="py-4" data-test-id="avis-{{id}}">
+      <i class="fas fa-quote-left text-xl mb-2"></i>
+      <p> {{commentaire}} </p>
+      <small class="text-gray-600">Le {{date}} </small>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+<div class="mt-8">
+  <h2 class="text-2xl font-bold text-g1 mb-4"> Ajouter un avis </h2>
+  <form {{!-- Modifier ici --}}>
+    <div class="mb-4">
+      <label for="commentaire" class="sr-only">Mon commentaire</label>
+      <textarea {{!-- Modifier ici --}} id="commentaire" cols="30" rows="4"
+        class="bg-gray-100 border-2 w-full p-4 rounded-lg"
+        placeholder="Votre avis, que pensez-vous de cette randonnée ?" required></textarea>
+    </div>
+    <div class="mb-4">
+      <label for="date" class="mb-2 font-bold text-g1 block">
+        Quand avez-vous fait cette randonnée ?
+      </label>
+
+      <input {{!-- Modifier ici --}} type="date" id="date" class="bg-gray-100 border-2 p-4 rounded-lg"
+        placeholder="Date" required />
+    </div>
+    <div>
+      <button type="submit" class="bg-green-500 text-white px-4 py-3 rounded font-medium">
+        Publier
+      </button>
+    </div>
+  </form>
+</div>

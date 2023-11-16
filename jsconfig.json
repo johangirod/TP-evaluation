@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "NodeNext",
+    "checkJs": true,
+    "lib": ["esnext", "dom"],
+    "esModuleInterop": true, // force import
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true // force import
+  },
+  "include": ["src/**/*"]
+}
