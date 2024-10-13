@@ -116,7 +116,7 @@ Les tests sont tous au rouge, et passeront au vert au fur et à mesure que vous 
     - `id`: L'identifiant de la randonnée
 
 1. Voici un exemple de code HTML à utiliser pour afficher une randonnée. Il faudra bien sûr l'adapter pour afficher les informations de manière dynamique.
-    ```html
+```html
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
       <img class="w-full" src="/img/arifat.jpg" data-test-id="photo" />
       <div class="px-6 py-4">
@@ -141,7 +141,7 @@ Les tests sont tous au rouge, et passeront au vert au fur et à mesure que vous 
         </a>
       </div>
     </div>
-    ```
+```
 
 ## Exercice 3 : afficher les avis – *4 points*
 
